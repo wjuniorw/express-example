@@ -4,7 +4,6 @@ var express    = require('express'),
     db         = mongoskin.db(process.env.DATABASE_URL, { safe: true }),
 	  app        = express();
 
-
 //Adiciona header que permite requests de outros dominios
 var allowCrossDomain = function (req, res, next) {
   res.header('Access-Control-Allow-Origin', '*');
