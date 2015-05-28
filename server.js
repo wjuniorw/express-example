@@ -1,7 +1,7 @@
 var express    = require('express'),
     bodyParser = require('body-parser'),
     mongoskin  = require('mongoskin'),
-    db         = mongoskin.db(process.env.DATABASE_URL, { safe: true }),
+    db         = mongoskin.db('mongodb://localhost/minhaApi', { safe: true }),
 	  app        = express();
 
 //Adiciona header que permite requests de outros dominios
