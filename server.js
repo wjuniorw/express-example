@@ -23,8 +23,8 @@ app.param('collection', function (req, res, next, collection) {
   req.collection = db.collection(collection);
   return next();
 });
-require('./rotas/routes');
-
+require('./rotas/routes')(app);
+var port = process.env.PORT || 5000;
 //Roda o servidor na porta 5000
-app.listen(process.env.PORT || 5000);
-console.log('Server running at http://127.0.0.1:5000/');
+app.listen(port);
+console.log('E a magica acontece em: ' + port);
