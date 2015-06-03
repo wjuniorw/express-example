@@ -41,3 +41,20 @@ Nova collection:
   ````
   GET - localhost://5000/api/Mycollection/556e3e13d63da39407d55dba
   ````
+  Para buscar informaçao por categoria, metodo GET com categoria definida no json:
+  ````
+    [{
+    nome: 'josé',
+    idade: '20',
+    categoria: 'admin'
+  },
+  {
+    nome: 'joão',
+    idade: '20',
+    categoria: 'admin'
+  }]
+  ````
+
+  ````
+  GET - localhost://5000/api/Mycollection/categoria/admin
+  ````
