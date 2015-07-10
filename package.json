@@ -1,12 +1,13 @@
 {
-  "name": "cabralia-tour-server",
+  "name": "api-workflow-auth-token",
   "version": "0.0.1",
-  "description": "Servidor Cabrália Tour app",
+  "description": "Servidor workflow com auth-token",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.3.0",
     "express": "^4.4.1",
-    "mongoskin": "^1.4.4"
+    "mongoskin": "^1.4.4",
+    "jsonwebtoken": "0.4.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -15,16 +16,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vitorleal/express-example.git"
+    "url": "https://github.com/wjuniorw/express-example.git"
   },
-  "author": "CEIT e Telefonica",
+  "author": "Wilson Junior",
   "license": "ISC",
   "engines": {
     "node": "0.10.x",
     "npm": "1.4.x"
   },
   "bugs": {
-    "url": "https://github.com/vitorleal/express-example/issues"
+    "url": "https://github.com/wjuniorw/express-example/issues"
   },
-  "homepage": "https://github.com/vitorleal/express-example"
+  "homepage": "https://github.com/wjuniorw/express-example"
 }

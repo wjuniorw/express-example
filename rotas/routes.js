@@ -120,4 +120,4 @@ app.delete('/api/:collection/:id', function(req, res, next) {
     }
   });
 });
-}
+};

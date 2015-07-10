@@ -3,6 +3,7 @@ var express    = require('express'),
     mongoskin  = require('mongoskin'),
     db         = mongoskin.db('mongodb://localhost/minhaApi', { safe: true }),
 	  app        = express();
+var jwt        = require("jsonwebtoken");
 
 //Adiciona header que permite requests de outros dominios
 var allowCrossDomain = function (req, res, next) {
@@ -24,6 +25,7 @@ app.param('collection', function (req, res, next, collection) {
   return next();
 });
 require('./rotas/routes')(app);
+require('./rotas/login')(app);
 var port = process.env.PORT || 5000;
 //Roda o servidor na porta 5000
 app.listen(port);
